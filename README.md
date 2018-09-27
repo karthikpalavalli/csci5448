@@ -1,2 +1,2 @@
 # csci5448
-Course project for the CSCI5448 
+CSCI5448 course project - Insurance Company. 
