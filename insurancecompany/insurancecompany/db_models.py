@@ -72,12 +72,15 @@ class AppointmentsDB(Base):
 
 class InsurancePlanDB(Base):
     __tablename__ = 'insuranceplan'
-    plan_id = Column(Integer, primary_key=True)
+    plan_id = Column(String, primary_key=True)
     plan_active = Column(Boolean)
+    plan_name = Column(String)
     plan_details = Column(JSON)
 
-    def __init__(self, plan_id, plan_active, plan_details):
+    def __init__(self, plan_id, plan_active, plan_name, plan_details):
+        self.plan_id = plan_id
         self.plan_active = plan_active
+        self.plan_name = plan_name
         self.plan_details = plan_details
 
 
