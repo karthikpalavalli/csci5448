@@ -61,6 +61,10 @@ class CancerCare(ExtendedHealthPlan):
         return self.plan_to_extend.get_plan_details(plan_id=plan_id)
 
 
+ADDITIONAL_CARDIAC_CARE_COPAY = 12
+ADDITIONAL_CARDIAC_CARE_COST = 80
+
+
 class CardiacCare(ExtendedHealthPlan):
     def __init__(self, plan_to_extend):
         super().__init__(plan_to_extend=plan_to_extend)
@@ -71,8 +75,8 @@ class CardiacCare(ExtendedHealthPlan):
 
         self.plan_to_extend.additional_details['illness_covered'] = self.plan_to_extend.additional_details.\
             get('illness_covered', []) + ['coronary artery disease', 'cardiomyopathy', 'marfan syndrome']
-        self.plan_to_extend.additional_details['co-pay'] += 12
-        self.plan_to_extend.additional_details['total-cost'] += 80
+        self.plan_to_extend.additional_details['co-pay'] += ADDITIONAL_CARDIAC_CARE_COPAY
+        self.plan_to_extend.additional_details['total-cost'] += ADDITIONAL_CARDIAC_CARE_COST
 
     def get_plan_details(self, plan_id):
         return self.plan_to_extend.get_plan_details(plan_id=plan_id)
