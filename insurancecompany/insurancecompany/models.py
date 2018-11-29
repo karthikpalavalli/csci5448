@@ -1,5 +1,3 @@
-import uuid
-
 from datetime import datetime
 from abc import ABC, abstractmethod
 from db_models import db, db_session, UserDB, AppointmentsDB, InsurancePlanDB

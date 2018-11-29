@@ -25,6 +25,8 @@ def add_user():
                                  role=role,
                                  session_id=None)
 
+    print('User Added')
+
     return res
 
 
@@ -149,6 +151,8 @@ def buy_plan(curr_user):
 
         plan_details = combo_plan.additional_details
 
+    print("Plan successfully bought")
+
     curr_user.buy_plan(plan_details=plan_details[1])
 
 
@@ -157,9 +161,8 @@ def schedule_call(curr_user):
 
 
 if __name__ == "__main__":
-    pass
     # Add new user
-    # new_user = add_user()
+    new_user = add_user()
 
     # Fetch existing user
     new_user = get_user('leja@ic.com')
@@ -168,7 +171,7 @@ if __name__ == "__main__":
     # view_current_plan(new_user)
 
     # Customer buys a new plan
-    # buy_plan(new_user)
+    buy_plan(new_user)
 
     # Schedule a call
-    schedule_call(new_user)
+    # schedule_call(new_user)
