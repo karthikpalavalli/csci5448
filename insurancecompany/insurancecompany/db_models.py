@@ -67,7 +67,7 @@ class AppointmentsDB(Base):
         self.email_cust = email
         self.appointment_request_date = appointment_request_date
         self.request_addressed = request_addressed
-        self.request_addressed = request_addressed_details
+        self.request_addressed_details = request_addressed_details
 
 
 class InsurancePlanDB(Base):
