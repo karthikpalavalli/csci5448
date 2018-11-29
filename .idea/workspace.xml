@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c011d398-e912-4c47-a2ca-f402ecf865bf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/insurancecompany/insurancecompany/insurance_plan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insurancecompany/insurancecompany/db_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/insurancecompany/insurancecompany/db_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insurancecompany/insurancecompany/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/insurancecompany/insurancecompany/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insurancecompany/insurancecompany/insurance_plan.py" beforeDir="false" afterPath="$PROJECT_DIR$/insurancecompany/insurancecompany/insurance_plan.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +85,11 @@
       <file leaf-file-name="insurance_plan.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/insurancecompany/insurancecompany/insurance_plan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+            <state relative-caret-position="443">
+              <caret line="172" column="32" lean-forward="true" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +97,8 @@
       <file leaf-file-name="db_models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/insurancecompany/insurancecompany/db_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="86" column="28" lean-forward="true" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+            <state relative-caret-position="1862">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -126,6 +127,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>query</find>
+      <find>class</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -311,9 +313,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32665965" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.2971549" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.22128557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26789588" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27548808" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39936775" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -349,20 +351,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/insurancecompany/insurancecompany/insurance_plan.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/insurancecompany/insurancecompany/insurance_plan.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="10" />
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>dir(new_plan)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new_plan.additional_details.get('total-cost', 0) * 0.90</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/insurancecompany/insurancecompany/controllers.py">
@@ -737,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/insurancecompany/insurancecompany/db_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="86" column="28" lean-forward="true" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        <state relative-caret-position="1862">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -747,8 +751,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/insurancecompany/insurancecompany/insurance_plan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+        <state relative-caret-position="443">
+          <caret line="172" column="32" lean-forward="true" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

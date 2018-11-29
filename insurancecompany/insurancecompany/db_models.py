@@ -84,8 +84,15 @@ class InsurancePlanDB(Base):
         self.plan_details = plan_details
 
 
-# if __name__ == "__main__":
-#     db_string = URL(**postgres_db)
-#     db = create_engine(db_string)
-#
-#     Base.metadata.create_all(db)
+def initialize_databases():
+    """
+    Initializes the databases. Call to it should be made only once.
+
+    :return: None
+    """
+
+    Base.metadata.create_all(db)
+
+
+# Creates the database on first run of the project.
+# initialize_databases()
